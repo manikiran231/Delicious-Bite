@@ -25,6 +25,10 @@
 3. Use the search bar to find recipes by entering ingredients, cuisine, or dish name.
 4. Click on a recipe to view its details, including ingredients and cooking instructions.
 
+## Deployment
+
+You can access the live version of the website here: [Delicious Bite](https://delicious-bite-two.vercel.app/)
+
 ## Future Improvements
 
 - **User Accounts**: Allow users to create accounts and save favorite recipes.
