@@ -1,26 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Delicious Bite</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delicious Bite</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <h1>Delicious Bite</h1>
-        <form>
-            <input type="text" name="search" placeholder="Search for a recipe" class="input">
-            <button type="button" class="button">Search</button>
-        </form>
-    </nav>
-    <div class="container">
-        <h2 class="h2">Search for Your Favorite Recipie...</h2>
+  <nav>
+    <h1>Delicious Bite</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="welcome-section">
+    <h2>Welcome to Delicious Bite!</h2>
+    <p>Your ultimate recipe finder. Discover, cook & share amazing meals.</p>
+  </section>
+
+  <section class="search-section">
+    <form id="search-form">
+      <input
+        type="text"
+        name="search"
+        placeholder="Search for a recipe"
+        class="input"
+        autocomplete="off"
+      />
+      <button type="submit" class="button">Search</button>
+    </form>
+  </section>
+  
+  <h2 class="section-title">Featured Recipes</h2>
+  <section class="container" id="recipes-container">
+    <!-- Recipes will load here -->
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"Delicious Bite helped me discover amazing new meals! Love the simplicity."</p>
+        <div class="author">– Priya R.</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"The YouTube links are a game changer. I cooked biryani perfectly on my first try!"</p>
+        <div class="author">– Arjun M.</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"This site is perfect for my late-night cravings. Super easy to search and cook."</p>
+        <div class="author">– Neha S.</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"I love how clean and easy the site is. The recipe videos saved me so much time!"</p>
+        <div class="author">– Samir K.</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Submitting my own recipes and seeing them featured feels awesome. Highly recommend!"</p>
+        <div class="author">– Anjali P.</div>
+      </div>
     </div>
-    <div class="recipie-details">
-        <button class="close-btn">x</button>
-        <div class="recipie-content"></div>
-    </div>
-    <script src="app.js"></script>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      At Delicious Bite, we believe that cooking should be fun and accessible to everyone. Our platform connects food lovers worldwide by providing easy access to diverse recipes from various cuisines. Whether you're a beginner or a pro chef, our curated collection, complete with video tutorials, helps you cook confidently and creatively. Join our community, share your recipes, and make every meal memorable!
+    </p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input
+        type="text"
+        name="channel"
+        placeholder="Your Channel Link"
+        required
+      />
+      <input
+        type="text"
+        name="title"
+        placeholder="Recipe Title"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email for updates"
+        required
+      />
+      <textarea
+        name="details"
+        placeholder="Recipe Details"
+        rows="5"
+        required
+      ></textarea>
+      <button type="submit" class="button">Submit Recipe</button>
+    </form>
+    <p id="contact-message"></p>
+  </section>
+
+  <!-- Popup Recipe Modal -->
+  <div class="recipie-details" id="recipe-popup">
+    <button class="close-btn" id="close-popup">×</button>
+    <div class="recipie-content"></div>
+  </div>
+
+  <footer>
+  <p>
+    &copy; 2024 Delicious Bite. Made with ❤️ by 
+    <a href="https://www.linkedin.com/in/tamminaina-manikiran-85b03726a/" target="_blank" rel="noopener noreferrer">
+      Manikiran.
+    </a>
+  </p>
+</footer>
+
+
+  <script src="app.js"></script>
 </body>
 </html>
